@@ -74,8 +74,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 
 # Install ADK
-# pip install google-adk
-#pip install google-adk[a2a]
+pip install google-adk
 
 # Navigate to the app directory New Terminal
 cd adk_agent/
