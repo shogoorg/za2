@@ -58,6 +58,14 @@ bq load --source_format=CSV --autodetect --skip_leading_rows=1 --replace \
     "$PROJECT_ID:$DATASET_NAME.context_document" "$BUCKET_NAME/context_document.csv"
 echo "      Table context_document loaded."
 
+# 5. Create souces Table
+echo "Setting up Table: souces..."
+bq load --source_format=CSV --autodetect --skip_leading_rows=1 --replace \
+    --allow_quoted_newlines \
+    "$PROJECT_ID:$DATASET_NAME.souces" "$BUCKET_NAME/souces.csv"
+echo "      Table souces loaded."
+
+
 echo "----------------------------------------------------------------"
 echo "Setup Complete!"
 echo "----------------------------------------------------------------"
