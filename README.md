@@ -48,6 +48,7 @@ python3 -m venv .venv
 
 # Activate virtual environment
 source .venv/bin/activate
+pip install -r requirements.txt
 python clean.py
 ```
 
@@ -86,7 +87,7 @@ adk web
 ### 6. Chat with the Agent
 
 *   東京都の再エネ導入目標を教えて
-*   足立区の再エネ導入目標を教えて
+*   新宿区の再エネ導入目標を教えて
 *   東京都市町村議会議員公務災害補償等組合の再エネ導入目標を教えて
 
 ### 7. Cleanup
