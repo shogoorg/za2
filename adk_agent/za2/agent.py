@@ -5,7 +5,6 @@ from google.adk.agents import LlmAgent
 
 dotenv.load_dotenv()
 
-# 環境変数からプロジェクトIDを取得
 PROJECT_ID = os.getenv('GOOGLE_CLOUD_PROJECT', 'project_not_set')
 
 maps_toolset = tools.get_maps_mcp_toolset()
