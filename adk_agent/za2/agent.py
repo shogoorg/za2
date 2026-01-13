@@ -11,7 +11,7 @@ maps_toolset = tools.get_maps_mcp_toolset()
 bigquery_toolset = tools.get_bigquery_mcp_toolset()
 
 root_agent = LlmAgent(
-    model='gemini-3-pro-preview',
+    model='gemini-3-flash-preview',
     name='root_agent',
     instruction=f"""
                 # Role
